@@ -7,7 +7,13 @@ type Props = ComponentPropsWithoutRef<'label'> & {
 
 export default function Label({ children, optional, className, ...props }: Props) {
   return (
-    <label className={cn('', className)} {...props}>
+    <label
+      className={cn(
+        'font-title uppercase text-neutral-900 font-medium text-sm tracking-wider block mb-2',
+        className,
+      )}
+      {...props}
+    >
       {children}
 
       {optional ? <span className="">optional</span> : null}

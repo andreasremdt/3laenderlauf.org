@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: page.title,
-    description: page.description,
+    title: page.meta?.title || '',
+    description: page.meta?.description || '',
   }
 }

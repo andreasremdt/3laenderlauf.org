@@ -30,10 +30,12 @@ export default function Button({
   ...props
 }: Props) {
   const baseClasses = cn(
-    '',
+    'font-title uppercase font-bold px-4 py-2 cursor-pointer',
     {
-      '': variant === 'primary',
-      '': variant === 'secondary',
+      'bg-amber-300 text-neutral-800 hover:bg-amber-400 focus-visible:bg-amber-400':
+        variant === 'primary',
+      'bg-white text-neutral-900 hover:bg-neutral-100 focus-visible:bg-neutral-100':
+        variant === 'secondary',
     },
     className,
   )

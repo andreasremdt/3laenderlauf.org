@@ -29,6 +29,10 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
+  localization: {
+    locales: ['de', 'en', 'fr'],
+    defaultLocale: 'de',
+  },
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
     connectOptions: {

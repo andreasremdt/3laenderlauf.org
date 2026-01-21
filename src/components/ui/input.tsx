@@ -8,7 +8,7 @@ type Props = ComponentPropsWithoutRef<'input'> & {
 export default function Input({ className, type = 'text', id, error, ...props }: Props) {
   return (
     <input
-      className={cn('', className)}
+      className={cn('bg-white border border-neutral-200 py-2 px-4 w-full', className)}
       id={id}
       aria-invalid={error ? 'true' : undefined}
       aria-describedby={error ? `${id}-error` : undefined}
