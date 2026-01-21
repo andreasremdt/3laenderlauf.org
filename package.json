@@ -18,7 +18,7 @@
     "@payloadcms/next": "^3.69.0",
     "@payloadcms/plugin-seo": "^3.69.0",
     "@payloadcms/richtext-lexical": "^3.69.0",
-    "@payloadcms/translations": "^3.69.0",
+    "@payloadcms/translations": "^3.72.0",
     "@payloadcms/ui": "^3.69.0",
     "@tanstack/react-form": "^1.27.7",
     "clsx": "^2.1.1",
